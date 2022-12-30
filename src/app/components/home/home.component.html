@@ -1,0 +1,139 @@
+
+<main>
+  <article id="popular-news">
+    <div class="featured">
+        <h2>FEATURED</h2>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div   class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/images/carousel1.jpg" alt="Los Angeles" class="d-block w-100" />
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/carousel2.jpg" alt="Chicago" class="d-block w-100" />
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/carousel3.jpg" alt="New York" class="d-block w-100" />
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+              </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="latest">
+        <h2>LATEST</h2>
+        <section class="news">
+            <div class="news-container">
+                <img src="/assets/images/carousel2.jpg" alt="">
+                <p  class="popular-news-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="news-container">
+                <img src="/assets/images/carousel1.jpg" alt="">
+                <p  class="popular-news-text">Lorem ipsum dolor sit amet..</p>
+            </div>
+        </section>
+    </div>
+    <div class="our-picks">
+        <h2>OUR PICKS</h2>
+        <section class="news">
+            <div class="news-container">
+                <img src="/assets/images/carousel3.jpg" alt="">
+                <p  class="popular-news-text">Lorem ipsum dolor sit amet..</p>
+            </div>
+        </section>
+        <section class="news">
+            <div class="news-container">
+                <img src="/assets/images/carousel2.jpg" alt="">
+                <p  class="popular-news-text">Lorem ipsum dolor sit amet..</p>
+            </div>
+        </section>
+    </div>
+  </article>
+  <section class="more-news">
+    <div class="news-section">
+        <article class="world">
+            <h2>WORLD</h2>
+            <img src="https://images.skynewsarabia.com/images/v1/2022/09/21/1556887/1200/630/1-1556887.JPG" alt="" style="width: 100%; height: 270px;">
+            <h3>بوتين يحظر بيع نفط روسيا للبلدان التي حددت سقفا لسعره .</h3>
+            <p>أعلنت روسيا حظر بيع نفطها للبلدان والشركات التي تلتزم بسقف على سعره كانت قد توافقت عليه الدولة الغربية، ما أدى الى ارتفاع طفيف في أسعار الخام لفترة وجيزة.</p>
+        </article>
+        <article  class="sport">
+            <h2>SPORT</h2>
+            <img src="https://images.beinsports.com/oZtrkQ8mV153pzIlddwI4q5UBho=/670x424/smart/filters:watermark(https://assets.beinsports.com/picto-play.png,285,162,0)/4560026-33672WC-preview.jpg" alt="" style="width: 100%;">
+            <h3>مانشستر يونايتد يواصل نتائجه الإيجابية ويهزم نوتينغهام.</h3>
+            <p>عزز مانشستر يونايتد موقعه في المركز الخامس وحقق الفوز على ضيفه نوتينغهام فورست بثلاثة أهداف دون رد الثلاثاء في إطار المرحلة السابعة عشرة من الدوري الإنكليزي الممتاز.</p>
+        </article>
+    </div>
+    <!-- <aside class="recent-b">
+        <h2>RECENT</h2>
+        <div class="recent-news">
+            <img src="https://images.beinsports.com/oZtrkQ8mV153pzIlddwI4q5UBho=/670x424/smart/filters:watermark(https://assets.beinsports.com/picto-play.png,285,162,0)/4560026-33672WC-preview.jpg" alt="">
+            <p>2021 Mercedes-AMG CS3 Coupe Makes ite Debut</p>
+        </div>
+        <div class="recent-news">
+            <img src="/images/aside2.jpg" alt="">
+            <p>2021 Mercedes-AMG CS3 Coupe Makes ite Debut</p>
+        </div>
+        <div class="recent-news">
+            <img src="/images/aside3.jpg" alt="">
+            <p>2021 Mercedes-AMG CS3 Coupe Makes ite Debut</p>
+        </div>
+        <div class="recent-news">
+            <img src="/images/aside4.jpg" alt="">
+            <p>2021 Mercedes-AMG CS3 Coupe Makes ite Debut</p>
+        </div>
+        <div class="recent-news">
+            <img src="/images/aside5.jpg" alt="">
+            <p>2021 Mercedes-AMG CS3 Coupe Makes ite Debut</p>
+        </div>
+    </aside> -->
+  </section>
+</main>
+
+<div *ngIf="!isLoading" class="container p-5">
+  <div  class="row">
+  <div *ngFor="let d of topHeadingDisplay"  class=" col-lg-4" style="width:400px">
+    <div class="card">
+    <img class="card-img-top" *ngIf="!d.urlToImage"  src="/assets/images/default_img.jpg"   alt="Card image" >
+    <img class="card-img-top"  [src]="d.urlToImage" >
+    <div class="card-body">
+      <h4 class="card-title">{{d.title}}</h4>
+      <!-- <p class="card-text">Some example text.</p> -->
+      <a href="{{d.url}}" class="btn btn-dark w-100">Read More</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div  *ngIf="isLoading" class="text-center w-100">
+    <app-spinner></app-spinner>
+  </div>

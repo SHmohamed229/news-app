@@ -1,0 +1,169 @@
+:root
+{
+    --colorBrown : #e08b6c;
+}
+
+header
+{
+    background: #000;
+    color: #fff;
+}
+
+.website-header
+{
+    padding:20px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.website-header img
+{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.website-header h1
+{
+    margin: auto 0;
+}
+
+.social-icons
+{
+    text-align: right;
+    flex-grow: 1;
+}
+
+.social-icons i
+{
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.nav
+{
+    background-color: #000;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.nav ul
+{
+    margin: 20px 0 0 0 ;
+}
+
+.navbar-nav li
+{
+    padding: 10px 40px;
+}
+
+.navbar-nav li a
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.navbar-nav li a:hover
+{
+    color: #e08b6c;
+}
+
+.breaking-news-section
+{
+    padding: 0 30 0 60px;
+    display: flex;
+}
+
+#bText
+{
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e08b6c;
+    font-weight: 600;
+    margin: auto 0;
+    padding: 0 0 0 20px ;
+}
+
+.breaking-news
+{
+    padding: 0 30px;
+    color: #fff;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.social-icons i:hover,
+.breaking-news:hover
+{
+    color: #e08b6c;
+    cursor: pointer;
+}
+
+.bntime
+{
+    display: inline-block;
+    color: rgba(255, 255, 2555, 0.5);
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width :600px){
+  .website-header img
+  {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+  }
+  .website-header h1
+  {
+      font-size: 15px;
+  }
+  .breaking-news-section
+  {
+      padding: 10px;
+      flex-wrap: wrap;
+      height: 70px;
+  }
+  .navbar-toggler-icon
+  {
+      background-image: url(/assets/images/menu.jpg);
+  }
+  .navbar-collapse
+  {
+      background-color: #000;
+      z-index: 16;
+  }
+  .featured
+  {
+      flex: auto;
+  }
+  .news-section, .aside ,.world ,.sport, .social-links section
+  {
+      flex-basis: 100%;
+  }
+  .social-links section
+  {
+      padding: 15px 0;
+  }
+  aside
+  {
+      border-width:0;
+  }
+  .Copyright
+  {
+      font-size: 14px;
+  }
+  
+}

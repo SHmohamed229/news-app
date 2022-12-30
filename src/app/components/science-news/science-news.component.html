@@ -1,0 +1,20 @@
+<div  class="container p-5">
+  <!-- <h1 class="mb-4"> <span class="badge bg-secondary">Science News</span></h1> -->
+  <h1>Science News</h1>
+  <div *ngIf="!isLoading" class="row">
+  <div *ngFor="let d of scienceNewsDisplay"  class=" col-lg-4" style="width:400px">
+    <div class="card">
+      <img class="card-img-top" *ngIf="!d.urlToImage"  src="/assets/images/default_img.jpg"   alt="Card image" >
+      <img class="card-img-top"  [src]="d.urlToImage">
+    <div class="card-body">
+      <h4 class="card-title">{{d.title}}</h4>
+      <!-- <p class="card-text">Some example text.</p> -->
+      <a href="{{d.url}}" class="btn btn-dark w-100">Read More</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div  *ngIf="isLoading" class="text-center w-100">
+    <app-spinner></app-spinner>
+  </div>

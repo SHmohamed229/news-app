@@ -1,0 +1,76 @@
+<ngx-loading-bar></ngx-loading-bar>
+<header>
+  <div class="website-header">
+      <img src="../../assets/logo.png" alt="">
+      <h1>Egy News</h1>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/mohamed.uwk.5249" target="_blank"><i class="fa fa-facebook-f"></i></a>
+        <a href="https://twitter.com/Mohamed38Uwk" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="shmohamed229@gmail.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a href="https://www.instagram.com/ah.mohamed38"><i class="fa fa-instagram"></i></a>
+          <i class="fa fa-rss"></i>
+      </div>
+  </div>
+  <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+          <!-- Toggler/collapse button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/home">HOME</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="">POLITICS</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/world">WORLD</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/business">BUSINESS</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/art">ِART</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/tec">TECHNOLOGY</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/sport">SPORTS</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/science">Science</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" routerLink="news/health">Health</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+      </nav>
+  <div class="breaking-news-section">
+      <span id="bText">Breaking News</span>
+      <marquee  direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+          <a  href="{{d.url}}" *ngFor="let d of topHeadingDisplay" class="breaking-news" target="_blank">
+              <p class="bntime">{{d.publishedAt}}</p>
+              <!-- Congress under pressure to reach a  deal -->
+              {{d.title}}
+          </a>
+          <!-- <a href="#" class="breaking-news">
+              <p class="bntime">12 Oct 2022</p>
+              powerful laser beam is helping track
+          </a>
+          <a href="#" class="breaking-news">
+              <p class="bntime">13 Oct 2022</p>
+              Snowstorm buries pacific Northwest, with more on the way
+          </a> -->
+      </marquee>
+  </div>
+</header>
+
+<!-- <app-home></app-home> -->
+
+
