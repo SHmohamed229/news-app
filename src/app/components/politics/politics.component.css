@@ -1,0 +1,71 @@
+.container h1
+{
+  background-color: #d632c9;
+  color: aliceblue;
+  padding: 0 10px;
+  margin: 5px 0 0 0;
+  width:1175px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width :600px){
+  .website-header img
+  {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+  }
+  .website-header h1
+  {
+      font-size: 15px;
+  }
+  .breaking-news-section
+  {
+      padding: 10px;
+      flex-wrap: wrap;
+      height: 70px;
+  }
+  .navbar-toggler-icon
+  {
+      background-image: url(/assets/images/menu.jpg);
+  }
+  .navbar-collapse
+  {
+      background-color: #000;
+      z-index: 16;
+  }
+  .featured
+  {
+      flex: auto;
+  }
+  .news-section, .aside ,.world ,.sport, .social-links section
+  {
+      flex-basis: 100%;
+  }
+  .social-links section
+  {
+      padding: 15px 0;
+  }
+  aside
+  {
+      border-width:0;
+  }
+  .Copyright
+  {
+      font-size: 14px;
+  }
+  .container h1
+  {
+    width: 295px;
+  }
+}

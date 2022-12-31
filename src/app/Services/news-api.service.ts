@@ -24,6 +24,14 @@ export class NewsApiService {
             catchError(this.handelError)
     );
   }
+  politicNews() : Observable <any>
+  {
+    return this._http.get(environment.politics)
+    .pipe(
+        retry(2),//if in error go call tow because i need sure connected
+            catchError(this.handelError)
+    );
+  }
   worldNews() : Observable <any>
   {
     return this._http.get(environment.world)

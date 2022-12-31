@@ -19,6 +19,7 @@ import { ScienceNewsComponent } from './components/science-news/science-news.com
 import { HealthNewsComponent } from './components/health-news/health-news.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { PoliticsComponent } from './components/politics/politics.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     HealthNewsComponent,
     FooterComponent,
     SpinnerComponent,
+    PoliticsComponent,
   ],
   imports: [
     BrowserModule,

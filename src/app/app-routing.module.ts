@@ -4,6 +4,7 @@ import { ArtNewsComponent } from './components/art-news/art-news.component';
 import { BusinessNewsComponent } from './components/business-news/business-news.component';
 import { HealthNewsComponent } from './components/health-news/health-news.component';
 import { HomeComponent } from './components/home/home.component';
+import { PoliticsComponent } from './components/politics/politics.component';
 import { ScienceNewsComponent } from './components/science-news/science-news.component';
 import { SportsNewsComponent } from './components/sports-news/sports-news.component';
 import { TechNewsComponent } from './components/tech-news/tech-news.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path : 'news' , children:[
     {path : '' , redirectTo : 'home', pathMatch :'full' },
     {path : 'home' , component : HomeComponent},
+    {path : 'politics' , component : PoliticsComponent},
     {path : 'world' , component : WorldNewsComponent},
     {path : 'business' , component : BusinessNewsComponent},
     {path : 'art' , component : ArtNewsComponent},
